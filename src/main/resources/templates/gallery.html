@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link th:href="@{/css/home.css}" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title th:text="${title}"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body style="background-color: #2d4d6f">
+<nav class="navbar navbar-expand-lg" style="background-color: #243f5c">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: white">Цветочный магазин</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index" style="color: white"> Главная страница </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/about" style="color: white"> Информация о магазине </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/gallery" style="color: white"> Магазин </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/review" style="color: white"> Отзывы </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/reg" style="color: white"> Регистрация </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/auth" style="color: white"> Авторизация </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-lg" style="background-color: #243f5c">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/gallery" style="color: white"> Все цветы </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/gallery-roses" style="color: white"> Розы </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/gallery-georgins" style="color: white"> Георгины </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/gallery-lutiks" style="color: white"> Лютики </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="start"></div>
+<div style="background-color: #2d4d6f; width: 60%; height: 100%; margin:0 auto;">
+    <p style="color: white; font-size: 140%" align="center"> Ро́за — собирательное название видов и сортов представителей рода Шиповник (лат. Rósa) выращиваемых человеком. Большая часть сортов роз получена в результате длительной селекции путём многократных повторных скрещиваний и отбора. Некоторые сорта являются формами дикорастущих видов. </p>
+</div>
+<div class="box4" style="margin:10px auto;">
+    <p style="color: white"> Красная Роза </p>
+    <div style="width: 605px;">
+        <img src="/images/rose.jpg" style="vertical-align: middle;" width=200 height=200 hspace=0/>
+        <span style="vertical-align: middle; display: inline-block; width: 400px; color: white"> Красная Роза - символ глубокой любви, страсти и желания. С помощью красных роз выражают свою любовь, привязанность, уважение и восхищение. Красные розы является самой популярными, и их называют Королевами Роз. Любовь, романтика, свидания - все это красные розы! Симпатию выразит одна роза, а букет из трех и более цветков – бесспорное признание в любви.</span>
+    </div>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <div style="padding-top: 20px"></div>
+            <a class="btn btn-warning"> Купить </a>
+            <a class="btn btn-warning" href="/about-roses"> Дополнительно </a>
+        </li>
+    </ul>
+</div>
+<div class="box4" style="margin:10px auto;">
+    <p style="color: white"> Белая Роза </p>
+    <div style="width: 605px;">
+        <img src="/images/Роза белая.jpg" style="vertical-align: middle;" width=200 height=200 hspace=0/>
+        <span style="vertical-align: middle; display: inline-block; width: 400px; color: white"> Белая Роза - символ чистоты и невинности. Чаще всего именно белые розы дарят в честь искренней любви, такой же чистой, как девственно белая пелена первого снега. Белые розы — совершенная противоположность красных, которые дарят, выражая свою страсть и безумные жаркие чувства. Белая роза является символом вечной любви, более чистой, сильной и крепкой, чем все земные чувства, в том числе и страсть. Вот почему букет из белых роз дарят на свадьбу.</span>
+    </div>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <div style="padding-top: 20px"></div>
+            <a class="btn btn-warning"> Купить </a>
+            <a class="btn btn-warning" href="/about-roses"> Дополнительно </a>
+        </li>
+    </ul>
+</div>
+<div style="background-color: #2d4d6f; width: 60%; height: 100%; margin:0 auto;">
+    <p style="color: white; font-size: 140%" align="center"> Георгин (dahlia, далия) является родственником астр, многолетник. Назван именем шведского ботаника Андерса Даля, а русский вариант — исследователя из Петербурга Иоганна Георги. </p>
+</div>
+<div class="box4" style="margin:10px auto;">
+    <p style="color: white"> Оранжевые Георгины </p>
+    <div style="width: 605px;">
+        <img src="/images/OrangeGeorgins.jpg" style="vertical-align: middle;" width=200 height=200 hspace=0/>
+        <span style="vertical-align: middle; display: inline-block; width: 400px; color: white"> Оранжевые Георгины - это трансформация жизненной силы Солнца и огня (красный цвет) в плодородие и богатство Земли (жёлтый цвет). Так же Оранжевый цвет подчёркивает строгость данного растения. </span>
+    </div>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <div style="padding-top: 20px"></div>
+            <a class="btn btn-warning"> Купить </a>
+            <a class="btn btn-warning" href="/about-georgins"> Дополнительно </a>
+        </li>
+    </ul>
+</div>
+<div style="background-color: #2d4d6f; width: 60%; height: 100%; margin:0 auto;">
+    <p style="color: white; font-size: 140%" align="center"> Лютики начали культивировать еще в конце XVI века, были завезены в Англию из Турции. Через сто лет они стали очень популярными наравне с тюльпанами. С годами интерес к лютикам падал и к началу ХХ века он был позабыт, но благодаря многочисленным интенсивным селекциям вернул себе былую славу. В природе можно встретить дикорастущие виды лютика, они имеют простой цветок средних размеров желтого цвета, на садовые лютики совсем не похожи. </p>
+</div>
+<div class="box4" style="margin:10px auto;">
+    <p style="color: white"> Розовые Лютики </p>
+    <div style="width: 605px;">
+        <img src="/images/PurpleLutik.jpg" style="vertical-align: middle;" width=200 height=200 hspace=0/>
+        <span style="vertical-align: middle; display: inline-block; width: 400px; color: white"> Розовый — это цвет жизни, всего живого. Розовый цвет означает романтичность, доброту, любовь, страстность. Чем он бледнее, тем сильнее выражение любви. Вызывает чувство комфорта, успокаивает, избавляет от навязчивых мыслей. </span>
+    </div>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <div style="padding-top: 20px"></div>
+            <a class="btn btn-warning"> Купить </a>
+            <a class="btn btn-warning" href="/about-lutiks"> Дополнительно </a>
+        </li>
+    </ul>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+</html>
